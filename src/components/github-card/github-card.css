@@ -1,0 +1,84 @@
+:host {
+  --border-standard: 1px solid rgba(0, 0, 0, 0.15);
+  --padding-standard: 0.4375rem;
+}
+
+:host(.GithubCard--dark) {
+  --theme-background: #000036;
+  --theme-color: #fff;
+  --border-standard: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.GithubCard {
+  background-color: var(--theme-background, #fff);
+  border: var(--border-standard);
+  border-radius: 3px;
+  color: var(--theme-color, #333);
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 400px;
+  padding: var(--padding-standard);
+}
+
+.GithubCard__header {
+  display: flex;
+}
+
+.GithubCard__avatar {
+  max-width: 60px;
+}
+
+.GithubCard__avatar > img {
+  max-width: 100%;
+}
+
+.GithubCard__header {
+  padding: 0 0 var(--padding-standard) 0;
+}
+
+.GithubCard__name {
+  margin: 0 0 0 var(--padding-standard);
+}
+
+.GithubCard__link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.GithubCard__username {
+  display: block;
+  font-size: 70%;
+  opacity: 0.8;
+}
+
+.GithubCard__data {
+  border-top: var(--border-standard);
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.GithubCard__data-item {
+  padding: var(--padding-standard);
+}
+.GithubCard__data-item + .GithubCard__data-item {
+  border-left: var(--border-standard);
+}
+.GithubCard__data-item-count {
+  display: block;
+  font-weight: bold;
+}
+.GithubCard__data-item-title {
+  font-size: 0.8em;
+  font-weight: bold;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.GithubCard__member-since {
+  border-top: var(--border-standard);
+  font-size: 0.7em;
+  padding-top: var(--padding-standard);
+  text-align: right;
+}
