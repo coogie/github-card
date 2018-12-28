@@ -55,7 +55,8 @@ export class GithubCard {
             </li>
           </ul>
           <div class="GithubCard__member-since">
-            Member since {this.userData.created_at}
+            Member since{" "}
+            {new Date(this.userData.created_at).toLocaleDateString()}
           </div>
         </div>
       </article>

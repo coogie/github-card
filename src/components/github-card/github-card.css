@@ -3,7 +3,7 @@
   --padding-standard: 0.4375rem;
 }
 
-:host(.GithubCard--dark) {
+:host([theme="dark"]) {
   --theme-background: #000036;
   --theme-color: #fff;
   --border-standard: 1px solid rgba(255, 255, 255, 0.25);
@@ -15,7 +15,7 @@
   border-radius: 3px;
   color: var(--theme-color, #333);
   font-family: sans-serif;
-  margin: auto;
+  margin: var(--padding-standard) auto;
   max-width: 400px;
   padding: var(--padding-standard);
 }
